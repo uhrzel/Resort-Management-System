@@ -1,41 +1,29 @@
-# CSE-311-Database
-Resort Management system which was a project of cse 311
+# Resort Management System
 
+Welcome to the Resort Management System!
+
+## Overview
+
+This system is designed to manage and streamline various operations within a resort. It includes features such as user registration, account verification, and access to the management dashboard.
+
+## Credentials
+
+To access the admin account and manage the system, use the following credentials:
+
+- **Email:** admin@admin.com
+- **Password:** admin
 
 ## Getting Started
 
-An extensive explanation of the project is given in the [REPORT.md](REPORT.md)
+1. Clone the repository to your local machine:
 
-The aim of this system is to keep information of all the cricket players and clubs of
-Bangladesh. There will be 4 different Forms, Player, Club, Contract and Player Performance. 
+   ```
+   git clone https://github.com/your/repository.git
+   ```
 
-The submitted data will be stored according to the schema, inside a mysql database.
+2. Set up your database and configure the connection details in connect.php.
+   ` Open Xampp and start apache and  mysql`
 
-### Prerequisites
-
-
-
-### Installing
-
-
-## Running the tests
-
-
-
-
-## Deployment
-
-
-
-## Built With
-
-
-
-
-## Acknowledgments
-
-
-
-## License
-
-
+3. Import resort.sql in database folder to localhost/phpmyadmin.
+4. Run the application from your preferred web server
+5. Navigate to http://localhost/resort_management_system-master/ (or the appropriate URL for your setup) to view the user
