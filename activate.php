@@ -1,7 +1,7 @@
 <?php
 
 // Connect to database
-$con = mysqli_connect("localhost", "root", "", "resort");
+$con = mysqli_connect("localhost", "root", "arzelzolina10", "resort");
 
 
 if (isset($_GET['id'])) {
