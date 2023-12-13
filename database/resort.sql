@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 13, 2023 at 05:40 AM
+-- Generation Time: Dec 13, 2023 at 07:03 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -84,8 +84,7 @@ INSERT INTO `login` (`mid`, `email`, `password`, `status`) VALUES
 (2, 'admin@r.com', '202cb962ac59075b964b07152d234b70', 'Not Verified'),
 (5, 'ratul@gmail.com', '202cb962ac59075b964b07152d234b70', 'Not Verified'),
 (6, 'taslim@gmail.com', '250cf8b51c773f3f8dc8b4be867a9a02', 'Not Verified'),
-(11, 'a', '21232f297a57a5a743894a0e4a801fc3', 'Not Verified'),
-(15, 'Arzeljrz17@gmail.com', '202cb962ac59075b964b07152d234b70', 'Not Verified');
+(11, 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', 'Verified');
 
 -- --------------------------------------------------------
 
@@ -111,7 +110,8 @@ INSERT INTO `manager` (`mid`, `last_name`, `first_name`, `email`, `password`) VA
 (6, 'taslim', '', 'taslim@gmail.com', '250cf8b51c773f3f8dc8b4be867a9a02'),
 (5, 'ratul', '', 'ratul@gmail.com', '202cb962ac59075b964b07152d234b70'),
 (7, 'all', 'admin', 'a', '202cb962ac59075b964b07152d234b70'),
-(11, 'Zolina', 'Arzel John', 'Arzeljrz17@gmail.com', '202cb962ac59075b964b07152d234b70');
+(28, 'sasa', 'sa', 'ajmixrhyme@gmail.com', '202cb962ac59075b964b07152d234b70'),
+(27, 'Zolina', 'Arzel John', 'Arzeljrz17@gmail.com', '202cb962ac59075b964b07152d234b70');
 
 -- --------------------------------------------------------
 
@@ -374,13 +374,13 @@ ALTER TABLE `resort_rooms`
 -- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
-  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `manager`
 --
 ALTER TABLE `manager`
-  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `message`
