@@ -17,25 +17,31 @@ include "connect.php";
 
    </form>
    <?php
-
    if (isset($_POST['login'])) {
-
       $email = $_POST['email'];
       $password = $_POST['password'];
 
+      // Fetch user data including status
       $query = "SELECT * FROM login WHERE email = '$email' AND password = md5('$password')";
-
       $query_run = mysqli_query($con, $query);
 
       if (mysqli_num_rows($query_run) > 0) {
-         //vaild
-         $_SESSION['email'] = $email;
-         header('location:managerview.php');
+         $user = mysqli_fetch_assoc($query_run);
+
+         if ($user['status'] == 'Verified') {
+            // Valid and status is verified
+            $_SESSION['email'] = $email;
+            header('location: managerview.php');
+         } else {
+            // Invalid due to unverified status
+            echo '<script type="text/javascript"> alert("Your account is not yet verified During Registration Process, Please Register Again")</script>';
+         }
       } else {
-         //Invaild
-         echo '<script type="text/javascript"> alert("Invaild User")</script>';
+         // Invalid
+         echo '<script type="text/javascript"> alert("Invalid User")</script>';
       }
    }
+
 
    mysqli_close($con);
    ?>
